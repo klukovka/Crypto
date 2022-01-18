@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.crypto">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".CoinApplication"
         android:allowBackup="true"
@@ -12,7 +14,7 @@
         android:theme="@style/Theme.Crypto">
         <activity
             android:name=".presentation.MainActivity"
-            android:theme="@style/Theme.Crypto"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="true">
 
             <intent-filter>
